@@ -1,6 +1,6 @@
-# UIUC NLP Website - Modernized
+# UIUC NLP Website 2025
 
-This is a modernized version of the Zea Mays Center for Computational Linguistics website at the University of Illinois.
+This is a modernized version of the UIUC NLP website.
 
 ## Key Improvements
 
@@ -68,11 +68,10 @@ This is a modernized version of the Zea Mays Center for Computational Linguistic
 ## Contact
 
 For questions or to add information to this site, please contact:
-- Email: mfleck@illinois.edu
+- Email: vdongre2@illinois.edu
 
 ## Credits
 
-Design inspired by the Illinois Robotics Group website.
 Built for the University of Illinois at Urbana-Champaign.
 
 ---
