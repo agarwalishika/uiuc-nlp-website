@@ -1,9 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/nlphomepage/public_html/
-
-    - /bin/rsync -az --delete \
-        --exclude=".git*" \
-        --exclude=".cpanel.yml" \
-        ./ $DEPLOYPATH
+    - export DEPLOYPATH=/home/nlhomepage/public_html/
+    - /bin/rsync -az --delete --exclude=".git*" --exclude=".cpanel.yml" ./ $DEPLOYPATH
