@@ -1,21 +1,9 @@
-# ---
-# deployment:
-#   tasks:
-#     - export DEPLOYPATH=/home/nlphomepage/public_html/
-#     - /bin/rsync -az --delete --exclude=".git*" --exclude=".cpanel.yml" ./ $DEPLOYPATH
-
 ---
 deployment:
   tasks:
     - export SRCPATH=/home/nlphomepage/repositories/uiuc-nlp-website/
     - export DEPLOYPATH=/home/nlphomepage/public_html/
-
-    # publish
-    - /bin/rsync -az --delete --delete-excluded --force \
-        --exclude=".git*" --exclude=".cpanel.yml" \
-        "$SRCPATH" "$DEPLOYPATH"
-
-    # fix perms every time
-    - /bin/chmod 755 "$DEPLOYPATH"
-    - /bin/find "$DEPLOYPATH" -type d -exec /bin/chmod 755 {} \;
-    - /bin/find "$DEPLOYPATH" -type f -exec /bin/chmod 644 {} \;
+    - /bin/rsync -az --delete --delete-excluded --force --exclude=".git*" --exclude=".cpanel.yml" /home/nlphomepage/repositories/uiuc-nlp-website/ /home/nlphomepage/public_html/
+    - /bin/chmod 755 /home/nlphomepage/public_html
+    - /bin/find /home/nlphomepage/public_html -type d -exec /bin/chmod 755 {} \;
+    - /bin/find /home/nlphomepage/public_html -type f -exec /bin/chmod 644 {} \;
