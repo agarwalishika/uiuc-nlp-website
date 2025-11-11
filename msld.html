@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Midwest Speech and Language Days 2026 @ UIUC</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* --- Reset & base --- */
+    :root{
+      --nd-gold:#caa61a;
+      --muted:#666;
+      --max-width:1100px;
+      --sidebar-width:320px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #222;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:#fff}
+    a{color:var(--nd-gold);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* --- Top bar like university header --- */
+    .topbar{
+      background:#13294B; /* deep blue */
+      color:#fff;
+      padding:8px 16px;
+      font-size:14px;
+    }
+    .topbar a{color:#fff}
+
+    /* --- Page container --- */
+    .wrap{max-width:var(--max-width);margin:28px auto;padding:0 18px;display:flex;gap:28px}
+
+    /* --- Main content & sidebar --- */
+    main{flex:1;min-width:200px}
+    aside{width:var(--sidebar-width);flex-shrink:0}
+
+    h1{font-size:32px;margin:6px 0 12px}
+    .subtitle{color:var(--muted);margin-bottom:18px}
+
+    section{margin-bottom:26px}
+    .card{border:1px solid #eee;padding:16px;border-radius:8px}
+
+    /* schedule list styling */
+    .schedule ul{list-style:none;padding:0;margin:0}
+    .schedule li{padding:6px 0;border-bottom:1px dashed #eee}
+    .schedule h3{margin:8px 0}
+
+    /* keynotes list in sidebar */
+    .keynote{display:flex;gap:12px;margin-bottom:12px}
+    .keynote img{width:64px;height:64px;object-fit:cover;border-radius:6px}
+    .keynote .meta{font-size:14px}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* organizers grid */
+    .organizers{display:flex;flex-wrap:wrap;gap:12px}
+    .organizer{width:calc(50% - 6px);display:flex;gap:8px;align-items:center}
+    .organizer img{width:44px;height:44px;border-radius:6px;object-fit:cover}
+
+    /* responsive */
+    @media (max-width:900px){
+      .wrap{flex-direction:column;padding:0 14px}
+      aside{width:100%}
+      .organizer{width:33%}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div style="max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;gap:12px">
+      <a href="https://www.nd.edu" aria-label="University of Illinois At Urbana-Champaign">University of Illinois At Urbana-Champaign</a>
+      <span style="flex:1"></span>
+      <span class="muted">Midwest Speech and Language Days 2025</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <main>
+      <h1>Midwest Speech and Language Days 2026</h1>
+      <div class="subtitle">A two-day meeting for speech &amp; language researchers in the Midwest -- this year, hosted by UIUC.</div>
+
+      <section class="card">
+        <h2>About</h2>
+        <p>Midwest Speech and Language Days (MSLD) is a two-day meeting that continues the tradition of Illinois Speech Day and the Midwest Computational Linguistics Colloquium. Presenters and attendees from Midwest universities and research institutions are invited to share work, hear keynotes, and foster collaboration.</p>
+
+        <h3>Dates &amp; Location</h3>
+        <p class="muted">April 15–16, 2025 — McKenna Hall, University of Notre Dame, Notre Dame, Indiana</p>
+      </section>
+
+      <section class="card schedule">
+        <h2>Schedule (highlights)</h2>
+        <p class="muted">Full schedule is available <a href="#">here</a>.</p>
+        <h3>Tuesday April 15</h3>
+        <ul>
+          <li><strong>08:00–09:00</strong> Breakfast (provided) and registration</li>
+          <li><strong>09:00–09:05</strong> Welcome</li>
+          <li><strong>09:05–10:00</strong> Keynote: [TODO: ENTER NAME] </li>
+          <li><strong>10:15–11:00</strong> Talk Session 1</li>
+          <li><strong>11:15–12:00</strong> Talk Session 2</li>
+          <li><strong>13:00–14:00</strong> Poster Session 1</li>
+          <li><strong>16:00–16:55</strong> Keynote: [TODO: ENTER NAME]</li>
+        </ul>
+
+        <h3 style="margin-top:14px">Wednesday April 16</h3>
+        <ul>
+          <li><strong>08:00–09:00</strong> Breakfast (provided) and registration</li>
+          <li><strong>09:00–09:05</strong> Welcome</li>
+          <li><strong>09:05–10:00</strong> Keynote: [TODO: ENTER NAME] </li>
+          <li><strong>10:15–11:00</strong> Talk Session 3</li>
+          <li><strong>11:15–12:00</strong> Talk Session 4</li>
+          <li><strong>13:00–14:00</strong> Poster Session 2</li>
+          <li><strong>16:00–16:55</strong> Keynote: [TODO: ENTER NAME]</li>
+        </ul>
+      </section>
+      
+
+      <section class="card">
+        <h2>Poster Printing</h2>
+        <!--<p>Thank you to the Navari Family Center for Digital Scholarship for providing complimentary poster printing. Authors who submitted their poster by April 7 may pick up prints at the venue.</p>-->
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Questions? Email <a href="mailto:msld25-list@nd.edu">msld25-list@nd.edu</a>.</p>
+      </section>
+
+    </main>
+
+    <aside>
+      <section class="card">
+        <h2>Submissions</h2>
+        <p>Send in your submissions to the following link by [TODO: ENTER DATE]: <a href="https://forms.gle/ftNGW8sGKhpCMgEw8">Google Form Submission Link</a></p>
+      </section>
+        
+      <div class="card">
+        <h3>Keynote Speakers</h3>
+        <div class="keynote">
+          <img src="https://via.placeholder.com/64" alt="[TODO: ENTER NAME]" />
+          <div class="meta">
+            <strong>[TODO: ENTER NAME]</strong><br/><span class="muted">[TODO: ENTER AFFILIATION]</span>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Getting to Urbana Champaign</h3>
+        
+        <!--<p class="muted">From Chicago, the South Shore Line is an easy and inexpensive way to reach South Bend; taxi from the airport to campus is ~10 minutes.</p>-->
+        <!--<p class="muted">Parking information: <a href="#">Guest &amp; Visitor Parking</a></p>-->
+        <p class="muted">[TODO: ENTER INFORMATION]</p>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Organizers</h3>
+        <div class="organizers">
+          <div class="organizer"><img src="graphics/dilek.jpeg" alt="Dilek Hakkani-Tür"/><div class="muted">Dilek Hakkani-Tür</div></div>
+          <div class="organizer"><img src="graphics/gokhan.jpeg" alt="Gokhan Tur"/><div class="muted">Gokhan Tur</div></div>
+          <div class="organizer"><img src="graphics/heng.jpeg" alt="Heng Ji"/><div class="muted">Heng Ji</div></div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer style="text-align:center;padding:26px 0;color:var(--muted)">
+    © MSLD'26 @ UIUC
+  </footer>
+</body>
+</html>
